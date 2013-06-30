@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Cedula:</b>
+  <%= @professor.cedula %>
+</p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @professor.nombre %>
+</p>
+
+<p>
+  <b>Apellidos:</b>
+  <%= @professor.apellidos %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @professor.password %>
+</p>
+
+<p>
+  <b>Username:</b>
+  <%= @professor.username %>
+</p>
+
+<p>
+  <b>Rol:</b>
+  <%= @professor.rol %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @professor.email %>
+</p>
+
+
+<%= link_to 'Edit', edit_professor_path(@professor) %> |
+<%= link_to 'Back', professors_path %>

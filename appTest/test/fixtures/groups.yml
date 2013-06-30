@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Id_Curso: MyString
+  Cuatrimestre: MyString
+  Profesor: MyString
+  Grupo: 1
+
+two:
+  Id_Curso: MyString
+  Cuatrimestre: MyString
+  Profesor: MyString
+  Grupo: 1

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Group:</b>
+  <%= @test.group_id %>
+</p>
+
+<p>
+  <b>Descripcion:</b>
+  <%= @test.descripcion %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @test.fecha %>
+</p>
+
+<p>
+  <b>Estado:</b>
+  <%= @test.estado %>
+</p>
+
+<p>
+  <b>Duracion:</b>
+  <%= @test.duracion %>
+</p>
+
+<p>
+  <b>Total puntos:</b>
+  <%= @test.total_puntos %>
+</p>
+
+<p>
+  <b>Comentarios:</b>
+  <%= @test.comentarios %>
+</p>
+
+
+<%= link_to 'Edit', edit_test_path(@test) %> |
+<%= link_to 'Back', tests_path %>

@@ -1,0 +1,35 @@
+<h1>Listing tests</h1>
+
+<table>
+  <tr>
+    <th>Group</th>
+    <th>Descripcion</th>
+    <th>Fecha</th>
+    <th>Estado</th>
+    <th>Duracion</th>
+    <th>Total puntos</th>
+    <th>Comentarios</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tests.each do |test| %>
+  <tr>
+    <td><%= test.group_id %></td>
+    <td><%= test.descripcion %></td>
+    <td><%= test.fecha %></td>
+    <td><%= test.estado %></td>
+    <td><%= test.duracion %></td>
+    <td><%= test.total_puntos %></td>
+    <td><%= test.comentarios %></td>
+    <td><%= link_to 'Show', test %></td>
+    <td><%= link_to 'Edit', edit_test_path(test) %></td>
+    <td><%= link_to 'Destroy', test, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Test', new_test_path %>

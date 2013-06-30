@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  group_id: 1
+  descripcion: MyString
+  fecha: 2013-04-11 17:51:12
+  estado: 1
+  duracion: 1
+  total_puntos: 1
+  comentarios: MyText
+
+two:
+  group_id: 1
+  descripcion: MyString
+  fecha: 2013-04-11 17:51:12
+  estado: 1
+  duracion: 1
+  total_puntos: 1
+  comentarios: MyText
