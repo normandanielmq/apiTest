@@ -56,13 +56,13 @@ class StudentsController < ApplicationController
     else
       # Solicitud remota
       @student = Student.new({
-          :cedula => params[:Cedula],
-          :nombre => params[:Nombre],
-          :apellidos => params[:Apellidos],
-          :username => params[:UserName],
-          :password => params[:Password],
-          :rol => params[:Rol],
-          :email => params[:Email]
+          :cedula => params[:cedula],
+          :nombre => params[:nombre],
+          :apellidos => params[:apellidos],
+          :username => params[:userName],
+          :password => params[:password],
+          :rol => params[:rol],
+          :email => params[:email]
         })
     end
 
@@ -88,13 +88,13 @@ class StudentsController < ApplicationController
     else
       # Solicitud remota
       exito = @student.update_attributes({
-          :cedula => params[:Cedula],
-          :nombre => params[:Nombre],
-          :apellidos => params[:Apellidos],
-          :username => params[:UserName],
-          :password => params[:Password],
-          :rol => params[:Rol],
-          :email => params[:Email]
+          :cedula => params[:cedula],
+          :nombre => params[:nombre],
+          :apellidos => params[:apellidos],
+          :username => params[:userName],
+          :password => params[:password],
+          :rol => params[:rol],
+          :email => params[:email]
         })
     end
     respond_to do |format|

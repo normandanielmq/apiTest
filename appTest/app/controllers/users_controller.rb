@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   def login
   	status = ''
   	usuario = Usuario.new()
-    persona = Usuario.get_persona_by_username_password(params[:UserName], params[:Password])
+    persona = Usuario.get_persona_by_username_password(params[:username], params[:password])
     if persona.nil?
   	  usuario.set_status('Invalid user')
  	  else
@@ -24,19 +24,19 @@ class UsersController < ApplicationController
   def change_pass
     status = ''
     usuario = Usuario.new()
-    persona = Usuario.get_persona_by_id_password(params[:id], params[:OldPassword])
+    persona = Usuario.get_persona_by_id_password(params[:id], params[:old_password])
     if persona.nil?
       usuario.set_status('Invalid user')
     else
       if persona.class.name == 'Students'
         estudiante = Student.find(params[:id])
         if estudiante
-          estudiante.update_attribute(:password, params[:NewPassword])
+          estudiante.update_attribute(:password, params[:new_password])
         end
       else
           profesor = Professor.find(params[:id])
           if profesor
-            profesor.update_attributes({ :password => params[:NewPassword] })
+            profesor.update_attributes({ :password => params[:new_password] })
           end
       end
       usuario.set_status('OK')
